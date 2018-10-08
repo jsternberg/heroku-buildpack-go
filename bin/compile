@@ -434,6 +434,9 @@ fi
 
 export GOPATH
 
+# Generate any filesi before running the build.
+go generate ./...
+
 # GB installation
 case "${TOOL}" in
     gomodules)
